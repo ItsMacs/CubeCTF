@@ -149,7 +149,7 @@ public class CTFCommand {
         }
 
         //Has to be in a sync task as we're adding entites in the end method of InProgressGameState
-        //and commands are asynchronous
+        //and commands are asynchronous, wasn't needed in start as there is no entity spawning there.
         Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, gameManager::stopGame);
 
         sender.sendMessage(MiniMessage.miniMessage().deserialize(config.getMessage(Messages.GAME_STOPPED)));

@@ -10,7 +10,7 @@ setup-incomplete: "<red>The setup is incomplete! Remember to add all flag locati
 
 flag-taken: "<red><bold>{player} has Team {team}'s <red><bold>flag!"
 flag-set: "<yellow><bold>Team {team} <yellow><bold>flag set!"
-score-set: "<yellow><bold>Team {team} <yellow><bold>score set to{score}!"
+score-set: "<yellow><bold>Team {team} <yellow><bold>score set to {score}!"
 game-stopped: "<yellow><bold>Game stopped!"
 game-started: "<yellow><bold>Game started!"
 

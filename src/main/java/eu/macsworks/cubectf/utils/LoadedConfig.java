@@ -29,7 +29,7 @@ public class LoadedConfig {
     public void loadConfig(){
         instance.saveDefaultConfig();
 
-        baseRadiusSquared = Math.pow(instance.getConfig().getDouble("base-radius", 5), 2);
+        baseRadiusSquared = Math.pow(instance.getConfig().getDouble("team-base-radius", 5), 2);
 
         capturePoints = instance.getConfig().getInt("capture-points", 1);
         winPoints = instance.getConfig().getInt("win-points", 3);

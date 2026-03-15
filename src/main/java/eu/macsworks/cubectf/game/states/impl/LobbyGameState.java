@@ -2,8 +2,6 @@ package eu.macsworks.cubectf.game.states.impl;
 
 import eu.macsworks.cubectf.CubeCTF;
 import eu.macsworks.cubectf.game.states.GameState;
-import eu.macsworks.cubectf.utils.lang.Messages;
-import org.bukkit.Sound;
 
 public class LobbyGameState extends GameState {
 
@@ -23,6 +21,6 @@ public class LobbyGameState extends GameState {
 
     @Override
     public void onEnd() {
-        gameManager.broadcastMessage(config.getMessage(Messages.GAME_STARTING), Sound.BLOCK_NOTE_BLOCK_CHIME);
+
     }
 }

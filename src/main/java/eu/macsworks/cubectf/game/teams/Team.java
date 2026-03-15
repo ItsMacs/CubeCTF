@@ -4,30 +4,21 @@ import eu.macsworks.cubectf.CubeCTF;
 import eu.macsworks.cubectf.game.GameManager;
 import eu.macsworks.cubectf.utils.LoadedConfig;
 import eu.macsworks.cubectf.utils.lang.Messages;
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import net.kyori.adventure.text.Component;
+import lombok.*;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.block.Block;
 import org.bukkit.entity.*;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.persistence.PersistentDataType;
-import org.bukkit.util.Transformation;
-import org.bukkit.util.Vector;
-import org.joml.AxisAngle4f;
-import org.joml.Vector3f;
 
 import javax.annotation.Nullable;
 import java.util.*;
 
 @RequiredArgsConstructor(access = AccessLevel.PRIVATE)
-@Data
+@Getter @Setter
 public class Team {
 
     private final CubeCTF plugin;
@@ -121,6 +112,8 @@ public class Team {
     public boolean checkFlagCapture(){
         if(holdingFlag == null) return false;
 
+        //Players cannot lose their team membership mid-game (if they leave, they're not holding the flag anymore)
+        //If a player has lost their team status it's a bug.
         Team playerTeam = teamManager.getPlayerTeam(holdingFlag).orElseThrow(() -> new IllegalStateException("Player holding flag is not in a team"));
 
         //Player still hasn't reached their base
@@ -261,7 +254,7 @@ public class Team {
     }
 
     public List<Player> getMembers(){
-        return members.stream().map(Bukkit::getPlayer).toList();
+        return members.stream().map(Bukkit::getPlayer).filter(Objects::nonNull).toList();
     }
 
     public void clearMembers(){
