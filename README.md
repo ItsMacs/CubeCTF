@@ -22,4 +22,5 @@ The plugin has a `config.yml` and a `lang.yml` file, both are created after the 
 | `/ctf stop` | Stops the game. Only works while in progress. | `ctf.admin` |
 | `/ctf setflag <team>` | Sets the flag location for a team to your current position. | `ctf.admin` |
 | `/ctf score <team> <score>` | Sets the score for a team. Can be negative; exceeding the win threshold triggers an instant win. | `ctf.admin` |
+
 *Note: AI was used to beautify this command layout*
