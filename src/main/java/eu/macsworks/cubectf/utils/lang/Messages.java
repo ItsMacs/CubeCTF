@@ -1,0 +1,38 @@
+package eu.macsworks.cubectf.utils.lang;
+
+public enum Messages {
+    PLAYER_ONLY,
+    NO_TEAM_FOUND,
+    GAME_ALREADY_STARTED,
+    GAME_NOT_STARTED,
+    NOT_IN_TEAM,
+    TEAM_FULL,
+    SETUP_INCOMPLETE,
+
+    FLAG_TAKEN,
+    FLAG_SET,
+    SCORE_SET,
+    GAME_STOPPED,
+    GAME_STARTED,
+
+    GAME_STARTING,
+    TIMEFUL_MESSAGE,
+
+    OTHER_JOINED,
+    OTHER_LEFT,
+    JOINED_TEAM,
+    LEFT_TEAM,
+
+    GAME_ENDED,
+    RESULT_TEAM_WON,
+    RESULT_TIME_UP,
+
+    ACTIONBAR,
+    BOSSBAR,
+
+    FLAG_RECAPTURED,
+    FLAG_CAPTURED,
+
+    FLAG_NAME,
+    FLAG_LORE
+}

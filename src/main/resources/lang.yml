@@ -1,0 +1,36 @@
+#Language file for CubeCTF
+
+player-only: "<red>This command can only be used by players!"
+no-team-found: "<red>There's no team with that name!"
+game-already-started: "<red>The game has already started!"
+game-not-started: "<red>The game hasn't started yet!"
+not-in-team: "<red>This player isn't in a team!"
+team-full: "<red>This team is full!"
+setup-incomplete: "<red>The setup is incomplete! Remember to add all flag locations!"
+
+flag-taken: "<red><bold>{player} has Team {team}'s <red><bold>flag!"
+flag-set: "<yellow><bold>Team {team} <yellow><bold>flag set!"
+score-set: "<yellow><bold>Team {team} <yellow><bold>score set to{score}!"
+game-stopped: "<yellow><bold>Game stopped!"
+game-started: "<yellow><bold>Game started!"
+
+game-starting: "<yellow>Get ready, the game is starting!"
+timeful-message: "<white>{action} <yellow>in <white><bold>{time}!"
+
+other-joined: "<yellow>Player assigned successfully!"
+other-left: "<yellow>Player left successfully!"
+joined-team: "<yellow><bold>You joined the team </bold></yellow>{team}<bold><yellow>!"
+left-team: "<yellow><bold>You left the team </bold></yellow>{team}<bold><yellow>!"
+
+game-ended: "<yellow><bold>Game ended! {result}"
+result-team-won: "<yellow><bold>Team {team} <yellow><bold>won!"
+result-time-up: "<yellow><bold>Time's up! <yellow><bold>Team {team} <yellow><bold>won!"
+
+actionbar: "<white>{timer}"
+bossbar: "<blue>BLUE {blue_points} <white>| <red>RED {red_points}"
+
+flag-recaptured: "<yellow><bold>Team </yellow>{team}'s <yellow><bold>flag was returned to the starting point!</bold></yellow>"
+flag-captured: "<yellow><bold>Team </yellow>{team}'s <yellow><bold>flag was captured!</bold></yellow>"
+
+flag-name: "{team}'s <white>Flag"
+flag-lore: "<gray>Take this flag to your base\n<gray>to score one point for your team!"

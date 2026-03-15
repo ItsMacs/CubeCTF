@@ -1,0 +1,6 @@
+name: CubeCTF
+version: '1.0-SNAPSHOT'
+main: eu.macsworks.cubectf.CubeCTF
+api-version: '1.21'
+authors: [ Alice ]
+description: Simple CTF Plugin for CubeCraft's Take Home Project

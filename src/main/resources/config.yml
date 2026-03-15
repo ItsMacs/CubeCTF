@@ -1,0 +1,18 @@
+#CubeCTF plugin config
+
+#Amount of points per flag captured
+capture-points: 1
+
+#Amount of points needed to win
+win-points: 3
+
+#Radius (in blocks) of the team area (when a player reaches this radius, they capture the flag they have in hand)
+#Radius means this is a circle around the flag location.
+team-base-radius: 5
+
+match-time: 600 #Match time (in seconds)
+start-time: 10 #Seconds between /ctf start and the actual game start
+end-time: 10 #Seconds between either: ctf stop, game win or times up, and the game reset
+
+#Max amount of players per team
+team-size: 5
